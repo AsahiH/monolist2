@@ -5,9 +5,9 @@
         <div class="image">
           <div class="img-wrap">
             <% if @items.present? %>
-              <%= image_tag item['mediumImageUrls'].first['imageUrl'].gsub('?_ex=128x128', '') %>
+              <%= image_tag item['mediumImageUrls'].first['imageUrl'].gsub('?_ex=128x128', ''), alt: item.name %>
             <% else %>
-              <%= image_tag("no-image.png" , alt: item.title) %>
+              <%= image_tag("no-image.png" , alt: item.name) %>
             <% end %>
           </div>
         </div>
