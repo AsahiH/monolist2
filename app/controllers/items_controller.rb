@@ -13,7 +13,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @items = response.first(20)
   end
 
   private
