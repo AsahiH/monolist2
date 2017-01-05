@@ -31,8 +31,7 @@ class User < ActiveRecord::Base
   def following?(other_user)
     following_users.include?(other_user)
   end
-
-  ## TODO 実装
+## TODO 実装
   def have(item)
     haves.create(user_id: other_item.id)
   end
