@@ -1,0 +1,7 @@
+<span id="want_form-<%= item.id %>">
+  <% if item.want?(current_user) %>
+    <%= render 'items/unwant', item: item %>
+  <% else %>
+    <%= render 'items/want', item: item %>
+  <% end %>
+</span>

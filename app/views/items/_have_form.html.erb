@@ -1,0 +1,7 @@
+<span id="have_form-<%= item.id %>">
+  <% if item.have?(current_user) %>
+    <%= render 'items/unhave', item: item %>
+  <% else %>
+    <%= render 'items/have', item: item %>
+  <% end %>
+</span>
