@@ -20,7 +20,7 @@
         <% #TODO 商品タイトル %>
         <%= @item.title %>
       </div>
-      <%= render 'action' , item: @item %>
+      <%= render 'action' , item: @item if current_user %>
     </div>
     <div class="item-single-side">
       <div class="side-box">
