@@ -1,0 +1,12 @@
+<li class="ranking">  
+    <span >
+        <% if item.medium_image.present? %>
+              <%= image_tag(item.medium_image , alt: item.title) %>
+            <% else %>
+              <%= image_tag("no-image.png" , alt: item.title) %>
+         <% end %>
+    </span>
+    <span>
+        <%= item.title %>
+    </span>
+</li>
